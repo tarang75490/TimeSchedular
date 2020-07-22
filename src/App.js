@@ -1,13 +1,20 @@
 import React from 'react';
 import './App.css';
-import AppointmentVisualDisplayPage from './Container/AppointmentVisualDisplayPage/AppointmentVisualDisplayPage';
+import {Switch,Route,Redirect,withRouter} from 'react-router-dom'
+import TimeSchedular from './Container/TimeSchedular/TimeSchedular';
+import FrontPage from './Container/FrontPage/FrontPage'
+class App extends React.Component {
 
-function App() {
+  render(){
   return (
     <div className="App">
-      <AppointmentVisualDisplayPage/>
+    <Switch>
+    <Route path="/" exact component={FrontPage} />
+    <Route path="/timeSchedular" component={TimeSchedular} />
+    </Switch>
     </div>
   );
+  }
 }
 
-export default App;
+export default withRouter(App);

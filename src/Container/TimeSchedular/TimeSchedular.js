@@ -4,14 +4,14 @@ import Data from '../Data/schedule'
 import VisualListDisplay from './VisualListDisplay/VisualListDisplay'
 import ListCard from '../../Component/ListCard/listcard';
 
-class AppointmentVisualDisplayPage extends Component{
+class TimeSchedular extends Component{
 
     render(){
         return(
             <div  >
-                <ListCard>
+               
                 <VisualListDisplay schedule={Data}/>
-                </ListCard>
+             
             </div> 
         );
     }
@@ -19,4 +19,4 @@ class AppointmentVisualDisplayPage extends Component{
 
 
 
-export default AppointmentVisualDisplayPage;      
+export default TimeSchedular;      

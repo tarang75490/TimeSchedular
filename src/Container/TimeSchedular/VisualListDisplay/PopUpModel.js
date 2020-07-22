@@ -3,7 +3,7 @@ import {Row,Col} from 'react-bootstrap'
 import Popover from 'react-simple-popover';
 import './VisualListDisplay.css'
 
-class Appointment extends Component {
+class PopUpModel extends Component {
     state = {
         open: false
       };
@@ -24,18 +24,14 @@ class Appointment extends Component {
                    </div>
         <Popover
           placement='bottom'
-          style={{color:"black",width:"150%",height:"300px",zIndex:"1000"}}
+          style={{color:"black",width:"150%",height:"100px"}}
           target={this.refs.target}
           show={this.state.open}
           onHide={this.handleClose.bind(this)}
           hideWithOutsideClick={this.state.open}>
-            <hr/>
+                 
                     <Row>
-                            <Col sm={6}>Service Amount :</Col>
-                            <Col sm={4}>{this.props.appointinfo.serviceAmount}</Col>
-                    </Row>
-                    <Row>
-                            <Col sm={6}>Booking Slot :</Col><Col sm={4}>
+                            <Col sm={6}>Activity Time:</Col><Col sm={4}>
                              {(this.props.appointinfo.timeSpan.startSpan.hour)%12}:{this.props.appointinfo.timeSpan.startSpan.minutes}{"  "}{(this.props.appointinfo.timeSpan.startSpan.hour)>=12 ? "PM":"AM"}
                                 -
                                 {(this.props.appointinfo.timeSpan.endSpan.hour)%12}:{this.props.appointinfo.timeSpan.endSpan.minutes}{"  "}{(this.props.appointinfo.timeSpan.endSpan.hour)>=12 ? "PM":"AM"}
@@ -49,4 +45,4 @@ class Appointment extends Component {
 
 }
 }
-export default Appointment;
+export default PopUpModel;
