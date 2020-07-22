@@ -37,7 +37,7 @@ class FrontPage extends  React.Component {
             </ul>
            
             </div>
-            <div className={classes.item}>
+            <div className={classes.item3}>
             <button onClick={this.onClickHandler}>See Schedular <span style={{fontSize:"1.5em"}}>&#8594;</span></button>
             </div>
             </div>

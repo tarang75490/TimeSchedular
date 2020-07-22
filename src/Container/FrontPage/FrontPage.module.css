@@ -37,9 +37,21 @@
     width: 30%;
     font-size: 1.5em;
 }
-.item2{
-    font-size: 0.5em;
-}
+
+
+@media (max-width: 800px) {
+    .content {
+      flex-direction: column;
+    }
+    .item1{
+        width: 100%;
+    }
+    .item3{
+        width: 100%;
+        margin-bottom: 200px;
+    }
+
+  }
 
 
 
