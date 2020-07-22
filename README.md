@@ -8,7 +8,7 @@ All the Components are Customizable
 
 
 ### Live Demo
-Google Paginator [Live Demo](http://timeschedular.s3-website.ap-south-1.amazonaws.com/)
+Time Schedular [Live Demo](http://timeschedular.s3-website.ap-south-1.amazonaws.com/)
 
 ### `npm start`
 
