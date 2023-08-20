@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TimeSchedular/static/css/main.e1f240f0.css",
+    "main.js": "/TimeSchedular/static/js/main.67b6fe84.js",
+    "index.html": "/TimeSchedular/index.html",
+    "main.e1f240f0.css.map": "/TimeSchedular/static/css/main.e1f240f0.css.map",
+    "main.67b6fe84.js.map": "/TimeSchedular/static/js/main.67b6fe84.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1f240f0.css",
+    "static/js/main.67b6fe84.js"
+  ]
+}
